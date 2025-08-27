@@ -4,7 +4,7 @@ const Leaderboard = () => {
   const [leaderboard, setLeaderboard] = useState([]);
   const codespace = process.env.REACT_APP_CODESPACE_NAME;
   const endpoint = codespace
-    ? `https://${codespace}.app.github.dev/api/leaderboard/`
+    ? `https://${codespace}-8000.app.github.dev/api/leaderboard/`
     : 'http://localhost:8000/api/leaderboard/';
 
   useEffect(() => {
